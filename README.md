@@ -9,7 +9,7 @@ cordova plugin add https://github.com/Matsiya/cordova-social-share.git
 ## Usage
 
 ```
-window.socialshare.share("I'm at home.");
+window.socialshare.share(subject, text);
 ```
 
 ## Platforms
