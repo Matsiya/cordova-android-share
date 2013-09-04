@@ -35,8 +35,11 @@ public class SocialShare extends CordovaPlugin {
     private void doSendIntent(String subject, String text) {
         Intent sendIntent = new Intent(android.content.Intent.ACTION_SEND);
         sendIntent.setType("text/plain");
-        sendIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
-        sendIntent.putExtra(android.content.Intent.EXTRA_TEXT, text);
+        if( subject.length() > 0 )
+            sendIntent.putExtra(android.content.Intent.EXTRA_SUBJECT, subject);
+
+        if( text.length() > 0 )
+            sendIntent.putExtra(android.content.Intent.EXTRA_TEXT, text);
         this.cordova.startActivityForResult(this, sendIntent, 0);
     }
 }
