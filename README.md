@@ -19,6 +19,6 @@ Android, IOS and windows Phone will be supported later.
 
 ## Thanks
 
-This plugin ispired of others code :
+This plugin is inspired of other plugins :
 
 Android : https://github.com/phonegap/phonegap-plugins/tree/master/Android/Share
